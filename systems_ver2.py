@@ -28,5 +28,5 @@ except ValueError:
 if (system == 2 and 0 <= number < 256) or system == 8:
     systems(number, system)
 else:
-    print("Invalid data. Enter an integer in range [0;255]")
+    print("Invalid data. Only numbers in range [0;255] can be converted into binary system")
     quit()
