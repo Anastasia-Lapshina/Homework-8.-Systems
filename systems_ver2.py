@@ -26,8 +26,11 @@ except ValueError:
 else:
     if system == 2 and 0 <= number < 256:
         print("Your number in binary systems equals: ", systems(number, 2))
-    elif system == 8:
+    elif system == 8 and number >= 0:
         print("Your number in octal systems equals: ", systems(number, 8))
     elif system == 2 and (number < 0 or number > 255):
         print("Invalid data. Only numbers in range [0;255] can be converted into binary system")
+        quit()
+    elif system == 8 and number < 0:
+        print("Invalid data. Please enter a natural number")
         quit()
