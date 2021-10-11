@@ -40,3 +40,5 @@ if system == 8:
     elif numb == 0:
         print("In octal system your number equals: 0")
         quit()
+    if numb < 0:
+        print("Invalid data. Enter a natural number or zero")
