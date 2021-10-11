@@ -22,7 +22,7 @@ if system == 2 and 0 < numb <= 255:
     if numb > 0:
         print(f"In binary system your number equals: {''.join(map(str,binary))}")
         quit()
-elif numb == 0:
+elif system ==2 and numb == 0:
     print("In binary system your number equals: 0")
 elif system == 2 and (numb < 0 or numb > 255):
     print("Invalid data. Enter an integer in range [0;255]")
